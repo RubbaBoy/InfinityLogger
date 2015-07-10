@@ -1,0 +1,31 @@
+name: InfinityLogger
+main: com.rubbaboy.main.Main
+description: This plugin Logs everything you will need!
+author: RubbaBoy
+version: 1.0
+commands:
+  Log:
+    description: Shows all commands for InfinityLogger
+    usage: /Log
+  Logs:
+    description: Shows all logs made by InfinityLogger
+    usage: /Logs
+  ShowLogging:
+    description: Shows what is being logged/not logged by InfinityLogger
+    usage: /ShowLogging
+  DeleteLog:
+    description: Removes data from specified log.
+    usage: /DeleteLog [Log Number]
+permissions:
+  InfinityLogger.Log:
+    description: Use the Log command to view all InfinityLogger commands.
+    default: op
+  InfinityLogger.Logs:
+    description: Shows all logs InfinityLogger has made.
+    default: op
+  InfinityLogger.ShowLogging:
+    description: Shows what InfinityLogger is and is not logging.
+    default: op
+  InfinityLogger.DeleteLog:
+      description: Deletes a selected log.
+      default: op
