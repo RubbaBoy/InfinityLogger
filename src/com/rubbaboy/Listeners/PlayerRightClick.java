@@ -37,7 +37,7 @@ public class PlayerRightClick implements Listener {
             if(event.isBlockInHand()){
                 Location loc = event.getPlayer().getLocation();
                 Logger logger = new Logger();
-                logger.Log(8, "Placed block type " + event.getMaterial().toString() + " against block " + event.getClickedBlock().getType().toString() + " on face " + event.getClickedBlock().getFace(event.getClickedBlock()) + " and clicked block coordinates at X:" + event.getClickedBlock().getLocation().getBlockX() + " Y:" + event.getClickedBlock().getLocation().getBlockY() + " Z:" + event.getClickedBlock().getLocation().getBlockZ() + " with player coordinates at X:" + loc.getBlockX() + " Y:" + loc.getBlockY() + " :" + loc.getBlockZ(), event.getPlayer());
+                logger.Log(8, "Placed block type " + event.getMaterial().toString() + " against block " + event.getClickedBlock().getType().toString() + " on face " + event.getClickedBlock().getFace(event.getClickedBlock()) + " and clicked block coordinates at X:" + event.getClickedBlock().getLocation().getBlockX() + " Y:" + event.getClickedBlock().getLocation().getBlockY() + " Z:" + event.getClickedBlock().getLocation().getBlockZ() + " with player coordinates at X:" + loc.getBlockX() + " Y:" + loc.getBlockY() + " Z:" + loc.getBlockZ(), event.getPlayer());
             } else {
                 Location loc = event.getPlayer().getLocation();
                 Logger logger = new Logger();
