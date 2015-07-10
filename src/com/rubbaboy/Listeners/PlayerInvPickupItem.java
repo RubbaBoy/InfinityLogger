@@ -29,6 +29,6 @@ public class PlayerInvPickupItem implements Listener {
     public void onItemPickup(PlayerPickupItemEvent event) throws Exception {
         Location loc = event.getPlayer().getLocation();
         Logger logger = new Logger();
-        logger.Log(5, "Dragged item in inventory with player coordinates at X:" + loc.getBlockX() + " Y:" + loc.getBlockY() + " Z:" + loc.getBlockZ() + " item picked up being type " + event.getItem().getItemStack().getType().toString() + " players gamemode was " + event.getPlayer().getGameMode().toString() + " player flying is " + event.getPlayer().isFlying(), event.getPlayer());
+        logger.Log(5, "Picked up item with player coordinates at X:" + loc.getBlockX() + " Y:" + loc.getBlockY() + " Z:" + loc.getBlockZ() + " item picked up being type " + event.getItem().getItemStack().getType().toString() + " players gamemode was " + event.getPlayer().getGameMode().toString() + " player flying is " + event.getPlayer().isFlying(), event.getPlayer());
     }
 }
