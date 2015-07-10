@@ -54,7 +54,7 @@ public class Main extends JavaPlugin {
         if(getConfig().getBoolean("LogBlockDestroy")){pm.registerEvents(new PlayerDestroy(), this); Logging[3] = true;}
         if(getConfig().getBoolean("LogInventoryClick")){pm.registerEvents(new PlayerInvClick(), this); Logging[4] = true;}
         if(getConfig().getBoolean("LogInventoryClose")){pm.registerEvents(new PlayerInvClose(), this); Logging[5] = true;}
-        if(getConfig().getBoolean("LogInventoryDrag")){pm.registerEvents(new PlayerInvDrag(), this); Logging[6] = true;}
+//        if(getConfig().getBoolean("LogInventoryDrag")){pm.registerEvents(new PlayerInvDrag(), this); Logging[6] = true;}
         if(getConfig().getBoolean("LogInventoryOpen")){pm.registerEvents(new PlayerInvOpen(), this); Logging[7] = true;}
         if(getConfig().getBoolean("LogPlayerPickupItem")){pm.registerEvents(new PlayerInvPickupItem(), this); Logging[8] = true;}
         if(getConfig().getBoolean("LogLeftClick")){pm.registerEvents(new PlayerLeftClick(), this); Logging[9] = true;}
