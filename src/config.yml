@@ -1,0 +1,14 @@
+ChatFormat: '%type%: %name%:%uuid%:%ip%: %message%'
+LogChat: true
+LogHashtags: true
+LogCommands: true
+LogBlockDestroy: true
+LogInventoryClick: true
+LogInventoryClose: true
+LogInventoryDrag: true
+LogInventoryOpen: true
+LogPlayerPickupItem: true
+LogLeftClick: true
+LogMove: true
+LogRightClick: true
+ShowFilesNotFound: true
