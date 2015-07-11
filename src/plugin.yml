@@ -2,6 +2,7 @@ name: InfinityLogger
 main: com.rubbaboy.main.Main
 description: This plugin Logs everything you will need!
 author: RubbaBoy
+website: http://dev.bukkit.org/bukkit-plugins/infinitylogger/
 version: 1.0
 commands:
   Log:
