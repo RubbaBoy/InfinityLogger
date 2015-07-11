@@ -37,6 +37,7 @@ public class CommandLog implements CommandExecutor {
     public int count;
     String[] HelpMessages = {
             ChatColor.GOLD + "InfinityLogger plugin made by " + ChatColor.RED + Main.getPlugin().getDescription().getAuthors().toString().substring(1, Main.getPlugin().getDescription().getAuthors().toString().length() - 1),
+            ChatColor.GOLD + "To download and get help information go to " + ChatColor.RED + Main.getPlugin().getDescription().getWebsite(),
             ChatColor.GOLD + "InfinityLogger Copyright (C) 2015 Adam Yarris",
             ChatColor.GOLD + "See <http://www.gnu.org/licenses/> for licensing information",
             ChatColor.GOLD + "Version " + ChatColor.RED + Main.getPlugin().getDescription().getVersion(),
