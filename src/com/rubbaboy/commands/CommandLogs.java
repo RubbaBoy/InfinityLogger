@@ -45,6 +45,7 @@ public class CommandLogs implements CommandExecutor {
 //    private final int BaseSpeed = 15;
     String[] LogMessages = {
             ChatColor.GOLD + "Showing all current Log files:",
+            ChatColor.GOLD + "Do not do this command again until the countdown has ended.",
             ChatColor.GOLD + "Files marked with " + CommandEnum.FILE_NOT_FOUND.getMessage() + " " + ChatColor.GOLD + "are empty/have nothing written to it.",
             ChatColor.GOLD + "(Log files ordered from newest to oldest)"
     };
@@ -89,12 +90,14 @@ public class CommandLogs implements CommandExecutor {
                         if (file1.length() != 0) {
                             String B = String.valueOf(file1.length());
                             player.sendMessage(ChatColor.GOLD + "Log" + numCountdown + ChatColor.RED + " - " + B + "B");
+                            player.playSound(player.getLocation(), Sound.PISTON_EXTEND, 1, 100);
                             numCountdown--;
                             count++;
                         } else {
                             if (Main.showNotFound()) {
                                 String B = String.valueOf(file1.length());
                                 player.sendMessage(ChatColor.GOLD + "Log" + numCountdown + CommandEnum.FILE_NOT_FOUND.getMessage() + ChatColor.RED + " - " + B + "B");
+                                player.playSound(player.getLocation(), Sound.PISTON_EXTEND, 1, 100);
                             }
                             numCountdown--;
                             count++;
@@ -106,7 +109,6 @@ public class CommandLogs implements CommandExecutor {
                     player.playSound(player.getLocation(), Sound.ORB_PICKUP, 1, 100);
                 }
             }
-//        }.runTaskTimer(Main.getPlugin(), BaseSpeed / FinalSpeed, BaseSpeed / FinalSpeed);
         }.runTaskTimer(Main.getPlugin(), 15, 15);
 
     }
